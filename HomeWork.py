@@ -34,14 +34,30 @@
 # - x=2; y=4-> 1
 # - x=-34; y=-30 -> 3
 
-X = int(input('Введите X: '))
-Y = int(input('Введите Y: '))
+# X = int(input('Введите X: '))
+# Y = int(input('Введите Y: '))
 
-if X > 0 and Y > 0:
-    print("1")
-elif X < 0 and Y > 0:
-    print("2")
-elif X < 0 and Y < 0:
-    print("3")
-elif X > 0 and Y < 0:
-    print("4")
+# if X > 0 and Y > 0:
+#     print("1")
+# elif X < 0 and Y > 0:
+#     print("2")
+# elif X < 0 and Y < 0:
+#     print("3")
+# elif X > 0 and Y < 0:
+#     print("4")
+# else:
+#     print("центр системы координат")
+
+# Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
+
+a = int(input('Введите номер четверти: '))
+
+match a:
+    case 1:
+        print("+x, +y")
+    case 2:
+        print("-x, +y")
+    case 3:
+        print("-x, -y")
+    case 4:
+        print("+x, -y")
